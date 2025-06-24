@@ -3,11 +3,9 @@
  * Plugin Name:       Webmetic
  * Plugin URI:        https://webmetic.de/docs/integrationen/wordpress
  * Description:       Adds Webmetic script to your WordPress site. Simply enter your Account ID in the settings.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
- * Author:            Yannik Süß
- * Author URI:        https://github.com/yanniksuess
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       webmetic

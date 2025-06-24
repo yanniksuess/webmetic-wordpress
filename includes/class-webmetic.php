@@ -94,29 +94,12 @@ class Webmetic {
             // Sanitize the account ID
             $account_id = sanitize_text_field( $account_id );
             
-            // Register and enqueue the script properly
+            // Output script tag directly to avoid WordPress adding ID attribute
             $script_url = 'https://t.webmetic.de/iav.js?id=' . urlencode( $account_id );
-            wp_enqueue_script( 'webmetic-tracking', $script_url, array(), WEBMETIC_VERSION, true );
-            
-            // Add async attribute
-            add_filter( 'script_loader_tag', array( $this, 'add_async_attribute' ), 10, 2 );
+            echo '<script src="' . esc_url( $script_url ) . '" async></script>' . "\n";
         }
     }
 
-    /**
-     * Add async attribute to the Webmetic script.
-     *
-     * @since    1.0.0
-     * @param    string $tag    The script tag.
-     * @param    string $handle The script handle.
-     * @return   string         The modified script tag.
-     */
-    public function add_async_attribute( $tag, $handle ) {
-        if ( 'webmetic-tracking' === $handle ) {
-            return str_replace( ' src', ' async src', $tag );
-        }
-        return $tag;
-    }
 
     /**
      * Add an action to the collection to be registered with WordPress.
