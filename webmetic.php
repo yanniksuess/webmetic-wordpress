@@ -20,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define plugin constants
-define( 'WEBMETIC_VERSION', '1.0.0' );
+define( 'WEBMETIC_VERSION', '1.0.1' );
 define( 'WEBMETIC_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WEBMETIC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
