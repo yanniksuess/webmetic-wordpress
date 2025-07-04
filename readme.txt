@@ -3,7 +3,7 @@ Contributors: webmetic
 Tags: analytics, webmetic, statistics, visitor tracking, performance
 Requires at least: 5.2
 Tested up to: 6.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -80,6 +80,12 @@ The plugin itself only adds the script to your website. Please ensure you comply
 2. Settings page with Account ID entered
 
 == Changelog ==
+
+= 1.0.2 =
+* Fix WordPress.org plugin review compliance issues
+* Improved function naming with proper prefixes
+* Removed unnecessary textdomain loading
+* Performance optimizations
 
 = 1.0.1 =
 * Update plugin metadata
